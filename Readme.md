@@ -2,7 +2,7 @@
 
 * Студент: [Иван Сурков](https://up.htmlacademy.ru/htmlcss-individual/2/user/1681605).
 * Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
-
+* Сайт: [Мой сайт](https://panarama360.github.io/1681605-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
