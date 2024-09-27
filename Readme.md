@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Сурков](https://up.htmlacademy.ru/htmlcss-individual/2/user/1681605).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
 
 ---
 
