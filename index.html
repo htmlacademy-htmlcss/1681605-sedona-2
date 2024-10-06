@@ -1,12 +1,190 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta charset="utf-8" />
+    <title>Гостиницы в городе "Седона"</title>
   </head>
   <body>
+    <!-- Шапка страницы -->
+    <header class="main-header">
+      <a class="logo-link" href="/">
+        <img class="logo-img" src="#" alt="Логотип 'Седоны'" />
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="/">
+              Главная
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              О Седоне
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">
+              Гостиницы
+            </a>
+          </li>
+        </ul>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+        <ul class="navigation-list action-list">
+          <li class="navigation-item">
+            <!--
+            Тут не совсем понятно что поиск что избранное имеет одинаковое отображение,
+            но поиск (по моему) это открытие модального окна, а "избранное" это ссылка.
+            не особо понятно, можно ли ему давать клас navigation-link
+            -->
+            <button class="navigation-link btn-search" type="button">
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link favorits" href="#">
+              <span class="visually-hidden">Мои избранные гостиницы</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <!--
+            Тут так же, кнопка (по моему ссылка) а стиль имеет как кнопка можно ли ему задать клас btn?
+            -->
+            <a class="navigation-link btn" href="#">
+              Хочу сюда!
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <!-- Основной контент -->
+    <main class="main-page">
+      <h1 class="visually-hidden">Гостиницы города "Седона"</h1>
+
+      <!-- Секция "вступление" -->
+      <section class="introduction">
+        <h2 class="introduction-title">Седона — небольшой городок в Аризоне,<br />заслуживающий большего!</h2>
+        <p class="introduction-reason">
+          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+        </p>
+      </section>
+
+      <!-- Секция "преимущества" -->
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item true-city">
+            <h3 class="advantages-title">Настоящий<br />городок</h3>
+            <p class="advantages-description">
+              Седона — не аттракцион для<br />туристов, там течёт своя<br />жизнь
+            </p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Небольшая<br />площадь</h3>
+            <p class="advantages-description">
+              Все достопримечательности<br />находятся очень близко
+            </p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Красивая<br />дорога</h3>
+            <p class="advantages-description">
+              Ехать в Седону из Лас-Вегаса<br />совсем не скучно!
+            </p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-title">Мало<br />туристов</h3>
+            <p class="advantages-description">
+              Большинство едет в Гранд<br />Каньон и толпится там
+            </p>
+          </li>
+          <li class="advantages-item bridge">
+            <h3 class="advantages-title">Там есть<br />мост дьявола</h3>
+            <p class="advantages-description">
+              Да, по нему можно пройти!<br />Если вы осмелитесь,<br />разумеется
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Призыв к действию -->
+      <!-- Тут тоже множество вопросов по правильности оформления и выделения этого блока в отдельную секцию -->
+      <section class="call_to_action">
+        <h2 class="call_to_action-header">Приезжайте в Седону отдохнуть<br />в комфорте и уюте!</h2>
+        <p class="call_to_action-description">
+          Опытный персонал и качественное обслуживание!
+        </p>
+      </section>
+
+      <!-- Сервис который можно получить -->
+      <section class="service">
+        <h2 class="visually-hidden">Что вы получите в Седоне</h2>
+        <ul class="service-list">
+          <li class="service-item">
+            <h3 class="service-title service-home">Жильё</h3>
+            <p class="service-description">
+              Рекомендуем пожить<br/>в настоящем мотеле,<br />всё как в кино!
+            </p>
+          </li>
+          <li class="service-item service-eat">
+            <h3 class="service-title">Еда</h3>
+            <p class="service-description">
+              Всегда заказывайте<br />топовый фирменный бургер,<br />вы не разочаруетесь!
+            </p>
+          </li>
+          <li class="service-item service-souvenirs">
+            <h3 class="service-title">Сувениры</h3>
+            <p class="service-description">
+              Не только китайского,<br />но и настоящего местного<br />производства!
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Поиск гостиниц -->
+      <section class="search">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <!-- Вопрос, какой тег лучше использовать, strong кажется не подходящим, делать это заголовком, не отобразит сути блока -->
+        <b class="search-title">Заинтересовались?</b>
+        <p class="search-description">
+          Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <a class="btn" href="/catalog.html" >ПОИСК ГОСТИНИЦЫ В Седоне</a>
+      </section>
+
+      <!-- Рассылка -->
+      <section class="subscribe">
+        <h2 class="visually-hidden">Рассылка</h2>
+        <!-- Тут уже кажется что тег strong более подходящий, просто потому что это акцентный текст, так же призыв к действию -->
+        <strong class="subscribe-title">Подпишитесь на рассылку</strong>
+        <p class="subscribe-description">
+          Только полезная информация и никакого спама,<br />честное бойскаутское!
+        </p>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="main-footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link social-vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-yt" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="html-academy-link" href="https://htmlacademy.ru">
+        <img class="html-academy-image" src="#" alt="Логотип .html academy">
+      </a>
+    </footer>
   </body>
 </html>
