@@ -14,7 +14,7 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="/">
+            <a class="navigation-link" href="index.html">
               Главная
             </a>
           </li>
@@ -44,11 +44,13 @@
           <li class="navigation-item">
             <a class="navigation-link favorits" href="#">
               <span class="visually-hidden">Мои избранные гостиницы</span>
+              <!-- Забегая в перед, я бы сделал это через псевдокласс :after -->
+              <span class="favorits-count">12</span>
             </a>
           </li>
           <li class="navigation-item">
             <!--
-            Тут так же, кнопка (по моему ссылка) а стиль имеет как кнопка можно ли ему задать клас btn?
+            Тут так же, кнопка (по моему ссылка) а стиль имеет как кнопка можно ли ему задать класс btn?
             -->
             <a class="navigation-link btn" href="#">
               Хочу сюда!
@@ -123,7 +125,7 @@
           <li class="service-item">
             <h3 class="service-title service-home">Жильё</h3>
             <p class="service-description">
-              Рекомендуем пожить<br/>в настоящем мотеле,<br> всё как в кино!
+              Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
             </p>
           </li>
           <li class="service-item service-eat">
@@ -165,6 +167,7 @@
 
     <!-- Подвал -->
     <footer class="main-footer">
+      <h2 class="visually-hidden">Контакты</h2>
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link social-vk" href="https://vk.com/htmlacademy">
