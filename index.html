@@ -9,7 +9,7 @@
     <!-- Шапка страницы -->
     <header class="main-header">
       <a class="logo-link">
-        <img class="logo-img" src="#" alt="Логотип 'Седоны'">
+        <img class="logo-img" width="140" height="70" src="images/logo.svg" alt="Логотип 'Седоны'">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -39,14 +39,10 @@
           <li class="navigation-item">
             <a class="navigation-link favorits" href="#">
               <span class="visually-hidden">Мои избранные гостиницы</span>
-              <!-- Забегая в перед, я бы сделал это через псевдокласс :after -->
               <span class="favorits-count">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <!--
-            Тут так же, кнопка (по моему ссылка) а стиль имеет как кнопка можно ли ему задать класс btn?
-            -->
             <a class="navigation-link btn" href="#">
               Хочу сюда!
             </a>
@@ -57,19 +53,19 @@
 
     <!-- Основной контент -->
     <main class="main-page">
-      <h1 class="visually-hidden">Гостиницы города "Седона"</h1>
-
       <!-- Секция "вступление" -->
       <section class="introduction">
-        <h2 class="introduction-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-        <p class="introduction-reason">
-          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-        </p>
+        <h1 class="visually-hidden">Гостиницы города "Седона"</h1>
+        <img class="html-academy-image" width="458" height="352" src="images/welcome.svg" alt="Добро пожаловать в Седону">
       </section>
 
       <!-- Секция "преимущества" -->
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <p class="introduction-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+        <p class="introduction-reason">
+          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+        </p>
         <ul class="advantages-list">
           <li class="advantages-item true-city">
             <h3 class="advantages-title">Настоящий<br> городок</h3>
@@ -145,17 +141,22 @@
         <p class="search-description">
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="btn" href="/catalog.html" >ПОИСК ГОСТИНИЦЫ В Седоне</a>
+        <a class="btn" href="catalog.html" >ПОИСК ГОСТИНИЦЫ В Седоне</a>
       </section>
 
       <!-- Рассылка -->
       <section class="subscribe">
-        <h2 class="visually-hidden">Рассылка</h2>
-        <!-- Тут уже кажется что тег strong более подходящий, просто потому что это акцентный текст, так же призыв к действию -->
-        <strong class="subscribe-title">Подпишитесь на рассылку</strong>
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
+        <form action="https://echo.htmlacademy.ru/">
+          <label class="visually-hidden" for="subscribe-email">
+            Укажите ваш email
+          </label>
+          <input class="subscribe-email" placeholder="Ваш e-mail" type="email" id="subscribe-email">
+          <button class="btn subscribe-submit" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
 
@@ -181,7 +182,7 @@
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="html-academy-link" href="https://htmlacademy.ru">
-        <img class="html-academy-image" src="#" alt="Логотип .html academy">
+        <img class="html-academy-image" width="115" height="33" src="images/html_academy.svg" alt="Логотип .html academy">
       </a>
     </footer>
   </body>

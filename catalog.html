@@ -74,15 +74,15 @@
             <ul class="filter-list">
               <li class="filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" checked>
+                  <input class="control-input" type="checkbox" name="infrastructure" value="swimming" checked>
                   Бассейн
                 </label>
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure" checked>
+                  <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
                   Парковка
                 </label>
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="infrastructure">
+                  <input class="control-input" type="checkbox" name="infrastructure" value="wi-fi">
                   Wi-Fi
                 </label>
               </li>
@@ -93,15 +93,15 @@
             <ul class="filter-list">
               <li class="filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="apartments" checked>
+                  <input class="control-input" type="radio" name="apartments" value="hotel" checked>
                   Гостиница
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" name="apartments">
+                  <input class="control-input" type="radio" name="apartments" value="motel">
                   Мотель
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" name="apartments">
+                  <input class="control-input" type="radio" name="apartments" value="apartments">
                   Апартаменты
                 </label>
               </li>
@@ -143,7 +143,7 @@
         </ul>
         <ol class="catalo-list">
           <li class="catalo-card">
-            <img class="catalo-card-image" src="#" alt="Вид из гостиницы">
+            <img class="catalo-card-image" width="300" height="212" src="images/result_1.jpg" alt="Вид из гостиницы">
             <h3 class="catalo-card-title">Amara Resort & Spa</h3>
             <span class="catalo-card-apartments-type">Гостиница</span>
             <span class="catalo-card-price">От 4000 ₽</span>
@@ -155,7 +155,7 @@
             <span class="catalo-card-raiting">Рейтинг: 8,5</span>
           </li>
           <li class="catalo-card">
-            <img class="catalo-card-image" src="#" alt="Вид из гостиницы">
+            <img class="catalo-card-image" width="300" height="212" src="images/result_3.jpg" alt="Вид из гостиницы">
             <h3 class="catalo-card-title">Villas at Poco Diablo</h3>
             <span class="catalo-card-apartments-type">Гостиница</span>
             <span class="catalo-card-price">От 5000 ₽</span>
@@ -167,7 +167,7 @@
             <span class="catalo-card-raiting">Рейтинг: 9,2</span>
           </li>
           <li class="catalo-card">
-            <img class="catalo-card-image" src="#" alt="Вид из гостиницы">
+            <img class="catalo-card-image" width="300" height="212" src="images/result_2.jpg" alt="Вид из гостиницы">
             <h3 class="catalo-card-title">Desert Quail Inn</h3>
             <span class="catalo-card-apartments-type">Гостиница</span>
             <span class="catalo-card-price">От 2500 ₽</span>
@@ -179,7 +179,7 @@
             <span class="catalo-card-raiting">Рейтинг: 6,9</span>
           </li>
           <li class="catalo-card">
-            <img class="catalo-card-image" src="#" alt="Вид из гостиницы">
+            <img class="catalo-card-image" width="300" height="212" src="images/result_4.jpg" alt="Вид из гостиницы">
             <h3 class="catalo-card-title">GreenTree Inn</h3>
             <span class="catalo-card-apartments-type">Гостиница</span>
             <span class="catalo-card-price">От 1500 ₽</span>
@@ -215,11 +215,17 @@
 
       <!-- Рассылка -->
       <section class="subscribe without-bg">
-        <h2 class="visually-hidden">Рассылка</h2>
-        <strong class="subscribe-title">Подпишитесь на рассылку</strong>
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
+        <form action="https://echo.htmlacademy.ru/">
+          <label class="visually-hidden" for="subscribe-email">
+            Укажите ваш email
+          </label>
+          <input class="subscribe-email" placeholder="Ваш e-mail" type="email" id="subscribe-email">
+          <button class="btn subscribe-submit" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
 
@@ -245,7 +251,7 @@
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="html-academy-link" href="https://htmlacademy.ru">
-        <img class="html-academy-image" src="#" alt="Логотип .html academy">
+        <img class="html-academy-image" width="115" height="33" src="images/html_academy.svg" alt="Логотип .html academy">
       </a>
     </footer>
   </body>
