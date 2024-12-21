@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы в городе "Седона"</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
@@ -43,7 +44,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link btn" href="#">
+            <a class="navigation-link btn btn-brown" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -56,13 +57,13 @@
       <!-- Секция "вступление" -->
       <section class="introduction">
         <h1 class="visually-hidden">Гостиницы города "Седона"</h1>
-        <img class="html-academy-image" width="458" height="352" src="images/welcome.svg" alt="Добро пожаловать в Седону">
+        <img class="welcome-image" width="458" height="352" src="images/welcome.svg" alt="Добро пожаловать в Седону">
       </section>
 
       <!-- Секция "преимущества" -->
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p class="introduction-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+        <p class="section-header introduction-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
         <p class="introduction-reason">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
@@ -104,7 +105,7 @@
 
       <!-- Призыв к действию -->
       <section class="call_to_action">
-        <h2 class="call_to_action-header">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+        <h2 class="section-header call_to_action-header">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
         <p class="call_to_action-description">
           Опытный персонал и качественное обслуживание!
         </p>
@@ -138,17 +139,16 @@
       <!-- Поиск гостиниц -->
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <!-- Вопрос, какой тег лучше использовать, strong кажется не подходящим, делать это заголовком, не отобразит сути блока -->
-        <b class="search-title">Заинтересовались?</b>
+        <b class="section-header search-title">Заинтересовались?</b>
         <p class="search-description">
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="btn" href="catalog.html" >ПОИСК ГОСТИНИЦЫ В Седоне</a>
+        <a class="btn btn-brown" href="catalog.html" >ПОИСК ГОСТИНИЦЫ В Седоне</a>
       </section>
 
       <!-- Рассылка -->
       <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <h2 class="section-header subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
@@ -157,7 +157,7 @@
             Укажите ваш email
           </label>
           <input class="subscribe-email" placeholder="Ваш e-mail" type="email" id="subscribe-email">
-          <button class="btn subscribe-submit" type="submit">Подписаться</button>
+          <button class="btn btn-blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

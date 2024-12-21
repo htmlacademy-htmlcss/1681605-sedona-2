@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+}
+
+.navigation{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation-item{
+  list-style-type: none;
+}
+
+.btn{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.introduction{
+  background-image: url("../images/background_image.jpeg");
+  background-position: center;;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.favorits-count{
+  background-color: #7DB54F;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  color: #fff;
+}
+
+.favorits{
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+}
+
+.btn-search{
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+}
+
+.call_to_action, .service, .advantages, .search{
+  text-align: center;
+}
+
+.section-header{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.introduction-reason{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+
+.advantages-item{
+  background-color: #83B3D31F;
+  list-style-type: none;
+}
+
+.advantages-item:nth-child(odd){
+  background-color: #83B3D333;
+}
+
+.advantages-item:first-child, .advantages-item:last-child{
+  background-color: #82B3D3;
+  color: #fff;
+}
+
+.advantages-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.subscribe{
+  background-image: url("../images/background_subscribe.jpeg");
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.service-item{
+  list-style-type: none;
+}
+
+.service-item:nth-child(odd){
+    background-color: #83B3D31F;
+}
+
+.service-title{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.service-description{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.search-description{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.footer-phone{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.social-item{
+  list-style-type: none;
+}
+
+.social-vk{
+  background-image: url("../images/vk_logo.svg");
+}
+
+.social-tg{
+  background-image: url("../images/tg_logo.svg");
+}
+
+.social-yt{
+  background-image: url("../images/yt_logo.svg");
+}
+
+.social-link{
+  background-repeat: no-repeat;
+}
+
+.filter{
+  background-image: url("../images/background_filter.jpeg");
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.catalog-header-title{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+
+.breadcrumbs-link{
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.breadcrumbs-item{
+  list-style-type: none;
+}
+
+.filter-title{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+.control{
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+
+.btn-blue{
+  background-color: #82B3D3;
+}
+.btn-transparent{
+  background-color: transparent;
+}
+.btn-brown{
+  background-color: #756157;
+}
+.btn-green{
+  background-color: #7DB54F;
+}
+.btn-light{
+  background-color: #F2F2F2;
+  color: #000;
+}
+
+.search-count{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.sort-select{
+  color: #333333;
+}
+.catalo-card-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+.catalo-card-apartments-type{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #333333;
+}
+
+.catalo-card-price{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+}
+
+.catalo-card-raiting{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+
+.without-bg{
+  background-image: none;
+}
+.filter-group{
+  border: none;
+}
+.pagination-link{
+  font-size: 16px;
+  font-weight: 700;
+}
+.pagination-item{
+  list-style-type: none;
+}
+.catalo-card{
+  list-style-type: none;
+}
