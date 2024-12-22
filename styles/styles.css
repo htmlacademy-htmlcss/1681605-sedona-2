@@ -53,11 +53,11 @@ body {
 
 .introduction{
   background-image: url("../images/background_image.jpeg");
+  background-color: #bfe5fa;
   background-position: center;;
   background-repeat: no-repeat;
   text-align: center;
 }
-
 .favorits-count{
   background-color: #7DB54F;
   text-align: center;
@@ -186,6 +186,7 @@ body {
 
 .filter{
   background-image: url("../images/background_filter.jpeg");
+  background-color: #756157;
   background-repeat: no-repeat;
   color: #fff;
 }
