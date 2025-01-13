@@ -10,10 +10,10 @@
     <!-- Шапка страницы -->
     <header class="main-header">
       <a class="logo-link" href="index.html">
-        <img class="logo-img" width="140" height="70" src="images/logo.svg" alt="Логотип 'Седоны'">
+        <img class="logo-img" width="140" height="71" src="images/logo.svg" alt="Логотип 'Седоны'">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ol class="navigation-list links">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">
               Главная
@@ -24,12 +24,12 @@
               О Седоне
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item active-link">
             <a class="navigation-link" href="catalog.html">
               Гостиницы
             </a>
           </li>
-        </ul>
+        </ol>
 
         <ul class="navigation-list action-list">
           <li class="navigation-item">
@@ -44,7 +44,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link btn open-modal-btn" href="#">
+            <a class="navigation-link btn btn-brown" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -102,38 +102,44 @@
           </fieldset>
           <fieldset class="filter-group">
             <legend class="filter-title">Стоимость, ₽:</legend>
-            <input class="input-amount" type="number" name="from-amount" value="0">
-            <input class="input-amount" type="number" name="to-amount" value="9000">
+            <div class="filter-amount-range">
+              <input class="input-amount" type="number" name="from-amount" value="0">
+              <input class="input-amount" type="number" name="to-amount" value="9000">
+            </div>
             <input class="range-amount" type="range" name="range-amount" min="0" max="9000">
           </fieldset>
-          <input class="btn btn-blue" type="submit" value="Применить">
-          <input class="btn btn-transparent" type="reset" value="Сбросить">
+          <div class="filter-form-actions">
+            <input class="btn btn-blue" type="submit" value="Применить">
+            <input class="btn btn-transparent" type="reset" value="Сбросить">
+          </div>
         </form>
       </section>
 
       <section class="catalog">
-        <h2 class="visually-hidden">Найденные гостиницы</h2>
-        <strong class="search-count">Найдено гостиниц: 38</strong>
-        <select class="sort-select" name="sort">
-          <option class="sort-variant" value="Сначала дешевые" selected>Сначала дешевые</option>
-        </select>
-        <ul class="visible-type-list">
-          <li class="visible-type-item">
-            <a class="btn" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-          </li>
-          <li class="visible-type-item">
-            <a class="btn" href="#">
-              <span class="visually-hidden">Показать иначе</span>
-            </a>
-          </li>
-          <li class="visible-type-item">
-            <a class="btn" href="#">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-          </li>
-        </ul>
+        <div class="catalog-header">
+          <h2 class="visually-hidden">Найденные гостиницы</h2>
+          <strong class="search-count">Найдено гостиниц: 38</strong>
+          <select class="sort-select" name="sort">
+            <option class="sort-variant" value="Сначала дешевые" selected>Сначала дешевые</option>
+          </select>
+          <ul class="visible-type-list">
+            <li class="visible-type-item">
+              <a class="btn" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+            <li class="visible-type-item">
+              <a class="btn" href="#">
+                <span class="visually-hidden">Показать иначе</span>
+              </a>
+            </li>
+            <li class="visible-type-item">
+              <a class="btn" href="#">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ol class="catalo-list">
           <li class="catalo-card">
             <img class="catalo-card-image" width="300" height="212" src="images/result_1.jpg" alt="Вид на звездное небо из пещеры">
