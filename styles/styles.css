@@ -438,3 +438,12 @@ body{
 .catalog-header{
   display: flex;
 }
+
+.sort-select{
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.pagination{
+  display: flex;
+}
