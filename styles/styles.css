@@ -341,8 +341,16 @@ body {
 }
 .catalo-card{
   list-style-type: none;
+  width: 340px;
+  box-sizing: border-box;
+  padding: 20px;
 }
-
+.catalo-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
 html{
   background-color: #F2F2F2;
 }
@@ -366,11 +374,18 @@ body{
 
 .service-list{
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
 }
+
+/* не понятно как лучше сделать,
+устанавливая отступы и ширину,
+кажется что внутренние отступы по горизонтали лишние */
 .service-item{
   width: 400px;
-  height: 385px;
+  padding: 81px 85px;;
+  box-sizing: border-box;
+  /* height: 385px; */
 }
 
 
