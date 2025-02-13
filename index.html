@@ -14,8 +14,8 @@
       </a>
       <nav class="navigation">
         <ul class="navigation-list links">
-          <li class="navigation-item active-link">
-            <a class="navigation-link" href="index.html">
+          <li class="navigation-item">
+            <a class="navigation-link active-link" href="index.html">
               Главная
             </a>
           </li>
@@ -44,7 +44,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link btn btn-brown" href="#">
+            <a class="navigation-link btn btn-brown btn-sm" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -127,8 +127,8 @@
       <section class="service">
         <h2 class="visually-hidden">Что вы получите в Седоне</h2>
         <ul class="service-list">
-          <li class="service-item">
-            <h3 class="service-title service-home">Жильё</h3>
+          <li class="service-item service-home">
+            <h3 class="service-title">Жильё</h3>
             <p class="service-description">
               Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
             </p>
@@ -155,7 +155,7 @@
         <p class="search-description">
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="btn btn-brown" href="catalog.html" >ПОИСК ГОСТИНИЦЫ В Седоне</a>
+        <a class="btn btn-brown btn-lg" href="catalog.html" >ПОИСК ГОСТИНИЦЫ В Седоне</a>
       </section>
 
       <!-- Рассылка -->
@@ -164,12 +164,12 @@
         <p class="subscribe-description">
           Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="subscribe-email-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">
             Укажите ваш email
           </label>
           <input class="subscribe-email" placeholder="Ваш e-mail" type="email" id="subscribe-email">
-          <button class="btn btn-blue" type="submit">Подписаться</button>
+          <button class="btn btn-blue btn-lg btn-send-email" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -194,7 +194,9 @@
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <div class="footer-phone-container">
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </div>
       <a class="html-academy-link" href="https://htmlacademy.ru">
         <img class="html-academy-image" width="115" height="33" src="images/html_academy.svg" alt="Логотип .html academy">
       </a>
