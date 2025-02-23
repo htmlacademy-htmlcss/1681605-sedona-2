@@ -28,8 +28,15 @@ body{
   box-shadow: 0px 0px 15px 0px #00000033;
 }
 
-.visually-hidden{
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation{
@@ -113,6 +120,7 @@ body{
   display: block;
   width: 44px;
   height: 100%;
+  min-height: 44px;
 }
 
 .call_to_action, .service, .advantages, .search{
@@ -136,10 +144,13 @@ body{
 }
 
 .advantages-item{
+  display: flex;
   background-color: #83B3D31F;
   list-style-type: none;
 }
-
+.advantages-item img{
+  height: 100%;
+}
 .advantages-item:nth-child(odd){
   background-color: #83B3D333;
 }
@@ -147,6 +158,10 @@ body{
 .advantages-item:first-child, .advantages-item:last-child{
   background-color: #82B3D3;
   color: #fff;
+}
+
+.advantages-item:first-child .advantages-title::after, .advantages-item:last-child .advantages-title::after{
+  background: #FFFFFF4D;
 }
 
 .advantages-title{
@@ -184,7 +199,7 @@ body{
   color: #fff;
   text-align: center;
   gap: 20px;
-  padding: 96px 258px 104px 258px;
+  padding: 96px 20px 104px 20px;
 }
 
 .service-item{
@@ -264,11 +279,11 @@ body{
 .filter{
   background-image: url("../images/background_filter.jpeg");
   background-color: #756157;
-  padding-left: 70px;
-  padding-right: 70px;
   background-repeat: no-repeat;
-  height: 412px;
+  min-height: 412px;
   color: #fff;
+  background-size: cover;
+  padding: 35px 70px 70px;
 }
 
 .catalog-header-title{
@@ -276,6 +291,7 @@ body{
   font-weight: 700;
   line-height: 78px;
   text-align: left;
+  margin: 0;
 }
 
 .breadcrumbs-link{
@@ -481,10 +497,9 @@ body{
   width: 400px;
   gap: 30px;
   min-height: 385px;
-}
-
-.advantages-item{
-  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .advantages-reasons{
@@ -578,6 +593,8 @@ body{
 
 .action-list .btn{
   margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .navigation-link.active-link{
@@ -606,10 +623,10 @@ body{
   margin-top: 34px;
   display: flex;
   width: 100%;
+  justify-content: center;
 }
 
 .subscribe-email{
-  flex-grow: 1;
   border: none;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
@@ -619,6 +636,7 @@ body{
   line-height: 24px;
   background-color: #F2F2F2;
   color: rgba(0, 0, 0, 0.6);
+  min-width: 452px;
 }
 
 .btn-send-email{
@@ -635,4 +653,10 @@ body{
 .catalo-card-description > .btn{
   padding-left: 0;
   padding-right: 0;
+}
+.filter-form-actions{
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+  gap: 32px;
 }
