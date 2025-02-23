@@ -497,8 +497,8 @@ body{
   width: 400px;
   gap: 30px;
   min-height: 385px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   box-sizing: border-box;
 }
 
