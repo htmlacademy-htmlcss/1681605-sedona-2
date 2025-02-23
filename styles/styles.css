@@ -149,6 +149,7 @@ body{
   list-style-type: none;
 }
 .advantages-item img{
+  object-fit: cover;
   height: 100%;
 }
 .advantages-item:nth-child(odd){
@@ -579,6 +580,7 @@ body{
   flex-wrap: wrap;
   gap: 32px;
   margin-left: 28px;
+  max-width: 600px;
 }
 
 .links .navigation-link{
@@ -595,6 +597,8 @@ body{
   margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  box-sizing: border-box;
+  max-width: 160px;
 }
 
 .navigation-link.active-link{
