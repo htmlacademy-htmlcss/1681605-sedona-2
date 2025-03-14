@@ -795,6 +795,7 @@ body{
 
 .navigation-link.active-link{
   border-bottom: 2px solid #756257;
+  z-index: 1;
 }
 
 .logo-img{
