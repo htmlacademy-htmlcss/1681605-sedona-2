@@ -156,7 +156,7 @@
         <p class="search-description">
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <label for="open-modal" class="btn btn-brown btn-lg" href="catalog.html" >ПОИСК ГОСТИНИЦЫ В Седоне</label>
+        <a class="btn btn-brown btn-lg" href="index.html#modal" >ПОИСК ГОСТИНИЦЫ В Седоне</a>
       </section>
 
       <!-- Рассылка -->
@@ -214,15 +214,12 @@
       </a>
     </footer>
 
-    <!-- Чекбокс для модалки-->
-    <input type="checkbox" id="open-modal" style="display: none">
-
     <!-- Модалка -->
-    <div class="modal-overlay">
+    <div class="modal-overlay" id="modal">
       <div class="modal">
-        <label for="open-modal" class="close-modal">
+        <button class="close-modal" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
-        </label>
+        </button>
         <h1 class="modal-title">Поиск гостиницы в Седоне</h1>
         <form class="form-modal" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="modal-control-input">
@@ -247,15 +244,17 @@
             <label class="form-modal-label " for="child-count">
               Дети:
             </label>
-            <button type="button" class="modal-child-info">
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
-              </svg>
+            <div class="modal-child-info-wrapper">
+              <button type="button" class="modal-child-info">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                </svg>
+              </button>
               <div class="modal-child-info-data">
                 Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
               </div>
-            </button>
+            </div>
             <div class="form-modal-input-counter">
               <button type="button" class="button-count button-count-minus"></button>
               <input id="child-count" name="date-start" value="1">
