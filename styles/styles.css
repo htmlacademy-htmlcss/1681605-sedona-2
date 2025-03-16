@@ -68,6 +68,7 @@ body{
 }
 
 .btn{
+  font-family: PT Sans;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -116,8 +117,8 @@ body{
   line-height: 10px;
   color: #fff;
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 3%;
+  right: 7%;
   padding: 5px;
   border-radius: 50%;
 }
@@ -219,6 +220,10 @@ body{
   text-align: center;
   gap: 20px;
   padding: 96px 20px 104px 20px;
+}
+
+.logo-link{
+  width: 138px;
 }
 
 .service-item{
@@ -370,6 +375,7 @@ body{
   font-weight: 700;
   line-height: 24px;
   text-align: left;
+  padding: 0;
   margin: 0;
   padding-bottom: 32px;
 
@@ -533,12 +539,16 @@ body{
 }
 
 .range-amount{
-  margin-top: 28px;
+  margin-top: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .range-bar{
   position: relative;
   height: 4px;
+  width: 100%;
   background: linear-gradient(90deg, #E5E5E5 0%, #ffffff 0% 75%, rgba(229, 229, 229, 0.30) 75%);
 }
 
@@ -549,6 +559,7 @@ body{
 .range-min, .range-max{
     position: absolute;
     cursor: pointer;
+    background-color: white;
     width: 20px;
     height: 20px;
     border-radius: 5px;
@@ -588,10 +599,12 @@ body{
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 18px;
-  padding: 0;
-  border-bottom: 1px solid #E5E5E5;
-  padding-bottom: 40px;
+
   margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  /*border-bottom: 1px solid #E5E5E5;*/
+
 
 }
 
@@ -642,7 +655,7 @@ body{
   width: 400px;
   gap: 30px;
   min-height: 385px;
-  padding-top: 112px;
+  padding-top: 113px;
   padding-bottom: 100px;
   box-sizing: border-box;
 }
@@ -715,14 +728,16 @@ body{
   margin: 0;
   gap: 8px
 }
+
 .visible-type-item{
   list-style: none;
 }
+
 .catalog-header{
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  padding-top: 50px;
 }
+
 .btn-visible-type{
   display: flex;
   justify-content: center;
@@ -752,18 +767,31 @@ body{
   height: 15px;
 }
 .sort-select{
+  font-family: "PT Sans";
   margin-left: auto;
   margin-right: 70px;
 }
 
 .pagination{
   display: flex;
+  position: relative;
   padding: 0;
+  padding-top: 40px;
   gap: 8px;
   margin: 40px 0 0;
   flex-wrap: wrap;
 }
 
+.pagination:before{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: #E5E5E5;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .navigation-list{
   padding: 0;
   margin: 0;
@@ -773,7 +801,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  margin-left: 28px;
+  margin-left: 30px;
   max-width: 600px;
   padding-left: 16px;
 }
@@ -795,7 +823,11 @@ body{
   margin-top: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
-  max-width: 160px;
+  min-width: 160px;
+}
+
+.html-academy-link{
+  display: flex;
 }
 
 .navigation-link.active-link:after{
@@ -1276,14 +1308,15 @@ body{
 }
 
 .input-amount{
-  border: none;
-  background-color: transparent;
-  padding: 0 40px 0 20px;
-  height: 100%;
+  font-family: PT Sans;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   vertical-align: middle;
+  border: none;
+  background-color: transparent;
+  padding: 0 40px 0 20px;
+  height: 100%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -1333,6 +1366,7 @@ body{
   height: 20px;
   background: #FFFFFF;
   border-radius: 50%;
+  margin-left: 1px;
 }
 
 .control-input[type="radio"]:checked + .radio-mark:after{
@@ -1350,6 +1384,7 @@ body{
 }
 
 .control-text{
+  font-family: PT Sans;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
