@@ -185,16 +185,25 @@ body{
 }
 
 .advantages-title{
-  font-size: 24px;
+  font-family: PT Sans;
   font-weight: 700;
+  font-size: 24px;
   line-height: 28px;
+  letter-spacing: 0;
+  position:relative;
   text-transform: uppercase;
   margin: 0;
+  padding-bottom: 31px;
+  margin-bottom: 31px;
 }
 
 .advantages-title::after{
   content: "";
   display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   margin: auto;
   height: 2px;
   width: 60px;
@@ -654,7 +663,6 @@ body{
   flex-direction: column;
   justify-content: start;
   width: 400px;
-  gap: 30px;
   min-height: 385px;
   padding-top: 113px;
   padding-bottom: 100px;
