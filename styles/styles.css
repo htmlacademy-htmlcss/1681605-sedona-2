@@ -441,7 +441,7 @@ body{
 }
 
 .btn-sm{
-  padding: 8px 34px 8px 32px;
+  padding: 8px 34px 8px 34px;
 }
 
 .btn-lg{
@@ -645,7 +645,7 @@ body{
 }
 
 .true-city > .advantages-content, .bridge > .advantages-content{
-  padding-top: 100px;
+  padding-top: 102px;
 }
 
 .advantages-content{
