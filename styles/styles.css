@@ -184,6 +184,10 @@ body{
   background: #FFFFFF4D;
 }
 
+.advantages{
+  margin-top: -1px;
+}
+
 .advantages-title{
   font-family: PT Sans;
   font-weight: 700;
