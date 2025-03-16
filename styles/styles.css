@@ -194,7 +194,6 @@ body{
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 31px;
-  margin-bottom: 31px;
 }
 
 .advantages-title::after{
@@ -215,6 +214,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   margin: 0;
+  margin-top: 31px;
 }
 
 .subscribe{
