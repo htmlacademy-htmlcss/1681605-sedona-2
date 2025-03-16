@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Гостиницы в городе "Седона"</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
 
     <!-- Шапка страницы -->
-    <header class="main-header">
+    <header data-test="header" class="main-header">
       <a class="logo-link" href="index.html">
         <img class="logo-img" width="140" height="71" src="images/logo.svg" alt="Логотип 'Седоны'">
       </a>
@@ -54,15 +54,15 @@
     </header>
 
     <!-- Основной контент -->
-    <main class="main-page">
+    <main data-test="main" class="main-page">
       <!-- Секция "вступление" -->
-      <section class="introduction">
+      <section data-test="hero" class="introduction">
         <h1 class="visually-hidden">Гостиницы города "Седона"</h1>
         <img class="welcome-image" width="458" height="352" src="images/welcome.svg" alt="Добро пожаловать в Седону">
       </section>
 
       <!-- Секция "преимущества" -->
-      <section class="advantages">
+      <section data-test="advantages" class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="advantages-reasons">
           <p class="section-header introduction-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
@@ -116,17 +116,15 @@
         </ul>
       </section>
 
-      <!-- Призыв к действию -->
-      <section class="call_to_action">
-        <h2 class="section-header call_to_action-header">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
-        <p class="call_to_action-description">
-          Опытный персонал и качественное обслуживание!
-        </p>
-      </section>
-
       <!-- Сервис который можно получить -->
-      <section class="service">
+      <section data-test="service" class="service">
         <h2 class="visually-hidden">Что вы получите в Седоне</h2>
+        <div class="call_to_action">
+          <h2 class="section-header call_to_action-header">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+          <p class="call_to_action-description">
+            Опытный персонал и качественное обслуживание!
+          </p>
+        </div>
         <ul class="service-list">
           <li class="service-item service-home">
             <h3 class="service-title">Жильё</h3>
@@ -150,7 +148,7 @@
       </section>
 
       <!-- Поиск гостиниц -->
-      <section class="search">
+      <section data-test="search" class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <b class="section-header search-title">Заинтересовались?</b>
         <p class="search-description">
@@ -160,7 +158,7 @@
       </section>
 
       <!-- Рассылка -->
-      <section class="subscribe">
+      <section data-test="subscribe" class="subscribe">
         <h2 class="section-header subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама,<br> честное бойскаутское!
@@ -169,14 +167,14 @@
           <label class="visually-hidden" for="subscribe-email">
             Укажите ваш email
           </label>
-          <input class="subscribe-email" placeholder="Ваш e-mail" type="email" id="subscribe-email">
+          <input class="subscribe-email" placeholder="Ваш e-mail" type="email" id="subscribe-email" name="email">
           <button class="btn btn-blue btn-lg btn-send-email" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
 
     <!-- Подвал -->
-    <footer class="main-footer">
+    <footer data-test="footer" class="main-footer">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="social-list">
         <li class="social-item">
@@ -216,7 +214,7 @@
 
     <!-- Модалка -->
     <div class="modal-overlay" id="modal">
-      <div class="modal">
+      <div data-test="modal" class="modal">
         <button class="close-modal" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
@@ -229,14 +227,14 @@
           </fieldset>
           <fieldset class="modal-control-input">
             <label class="form-modal-label" for="date-end">Дата Выезда:</label>
-            <input required class="form-modal-input-date" id="date-end" name="date-start" value="1 сентября 2023" placeholder="Укажите дату">
+            <input required class="form-modal-input-date" id="date-end" name="date-end" value="1 сентября 2023" placeholder="Укажите дату">
             <span class="form-modal-input-info">На эти даты есть свободные номера. Пока есть.</span>
           </fieldset>
           <fieldset class="modal-control-counter">
             <label class="form-modal-label" for="adults-count">Взрослые:</label>
             <div class="form-modal-input-counter">
               <button type="button" class="button-count button-count-minus"></button>
-              <input id="adults-count" name="date-start" value="1">
+              <input id="adults-count" name="adults-count" value="2">
               <button type="button" class="button-count button-count-plus"></button>
             </div>
           </fieldset>
@@ -257,7 +255,7 @@
             </div>
             <div class="form-modal-input-counter">
               <button type="button" class="button-count button-count-minus"></button>
-              <input id="child-count" name="date-start" value="1">
+              <input id="child-count" name="child-count" value="2">
               <button type="button" class="button-count button-count-plus"></button>
             </div>
           </fieldset>
