@@ -984,9 +984,6 @@ body{
   fill: #7561574D;
 }
 
-.modal-overlay:target {
-  visibility: visible;
-}
 
 .modal-overlay{
   display: flex;
@@ -1001,6 +998,10 @@ body{
   visibility: hidden;
 }
 
+.modal-overlay:target, .modal-overlay-opened {
+  visibility: visible;
+}
+
 .modal{
   position: relative;
   background-color: #FFFFFF;
@@ -1011,6 +1012,7 @@ body{
   max-width: 800px;
   box-sizing: border-box;
 }
+
 .modal-title{
   font-weight: 700;
   font-size: 30px;
