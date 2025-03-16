@@ -616,9 +616,6 @@ body{
   margin: 0;
   padding: 0;
   margin-top: 40px;
-  /*border-bottom: 1px solid #E5E5E5;*/
-
-
 }
 
 .main-header{
@@ -1077,8 +1074,8 @@ body{
 .form-modal{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 24px;
-  column-gap: 80px;
+  row-gap: 23px;
+  column-gap: 88px;
   margin-top: 64px;
 }
 
@@ -1114,11 +1111,13 @@ body{
 }
 
 .form-modal-input-date{
+  font-family: 'PT Sans';
   display: flex;
   height: 48px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
+  padding: 0;
   padding-left: 20px;
   padding-right: 60px;
   font-weight: 700;
@@ -1137,6 +1136,7 @@ body{
 .form-modal-human-count{
   display: flex;
 }
+
 .form-modal-input-counter{
   display: grid;
   justify-content: center;
@@ -1147,7 +1147,9 @@ body{
   align-items: center;
   justify-items: center;
 }
+
 .form-modal-input-counter > input{
+  font-family: 'PT Sans';
   min-width: 31px;
   width: 31px;
   background-color: transparent;
@@ -1157,6 +1159,7 @@ body{
   text-align: center;
   border: none;
 }
+
 .button-count{
   border: none;
   display: flex;
@@ -1223,6 +1226,16 @@ body{
   margin-top: 24px;
   grid-column: span 2;
   border-radius: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
 }
 
 .modal-control-counter{
@@ -1245,8 +1258,6 @@ body{
 .modal-child-info-wrapper{
   position: relative;
   display: flex;
-  /*align-items: center;*/
-  /*align-items: center;*/
   margin-right: auto;
   margin-left: 10px;
 }
@@ -1392,7 +1403,6 @@ body{
   border-radius: 50%;
   position: absolute;
   background:  #3F5E72;
-  /*border-bottom: 3px solid #3F5E72;*/
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
