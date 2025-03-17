@@ -484,6 +484,8 @@ body{
   background-image: url("../images/arrow_down.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
+  max-width: 300px;
+  height: 48px;
 }
 
 .sort-select:hover{
@@ -539,9 +541,9 @@ body{
   font-weight: 700;
   min-width: 60px;
   min-height: 60px;
-  display: block;
-  align-content: center;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-right: 10px;
   padding-left: 10px;
   box-sizing: border-box;
@@ -593,6 +595,10 @@ body{
 
 .btn.pagination-current{
   cursor: auto;
+}
+
+.btn.pagination-current:active{
+  color: #000;
 }
 
 .catalo-card{
@@ -665,9 +671,8 @@ body{
   justify-content: start;
   width: 400px;
   min-height: 385px;
-  padding-top: 113px;
-  padding-bottom: 100px;
   box-sizing: border-box;
+  padding: 113px 85px 100px;
 }
 
 .advantages-reasons{
@@ -834,6 +839,7 @@ body{
   margin-bottom: 10px;
   box-sizing: border-box;
   min-width: 160px;
+  max-width: 200px;
 }
 
 .html-academy-link{
