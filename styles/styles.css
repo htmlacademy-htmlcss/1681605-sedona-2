@@ -63,6 +63,7 @@ body{
 }
 
 .navigation-link:hover{
+  color: #756157;
   opacity: .6;
 }
 
@@ -70,7 +71,7 @@ body{
   list-style-type: none;
   display: flex;
   align-items: center;
-  height: 64px;
+  min-height: 64px;
 }
 
 .btn{
@@ -838,6 +839,7 @@ body{
 .action-list{
   display: flex;
   flex-wrap: wrap;
+  align-self: start;
 }
 
 .action-list .btn{
