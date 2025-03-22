@@ -62,10 +62,15 @@ body{
   position: relative;
 }
 
+.navigation-link:hover{
+  opacity: .6;
+}
+
 .navigation-item{
   list-style-type: none;
   display: flex;
   align-items: center;
+  height: 64px;
 }
 
 .btn{
@@ -828,8 +833,6 @@ body{
 .links .navigation-link{
   height: 100%;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .action-list{
@@ -1357,6 +1360,17 @@ body{
   width: 100%;
   box-sizing: border-box;
 }
+
+.input-amount::-webkit-outer-spin-button,
+.input-amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-amount[type=number] {
+  -moz-appearance: textfield;
+}
+
 .control{
   display: flex;
   align-items: center;
