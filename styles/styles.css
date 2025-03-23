@@ -67,6 +67,12 @@ body{
   opacity: .6;
 }
 
+.navigation-link:active{
+  color: #756157;
+  opacity: .3;
+}
+
+
 .navigation-item{
   list-style-type: none;
   display: flex;
