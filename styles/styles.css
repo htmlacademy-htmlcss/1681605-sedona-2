@@ -81,7 +81,7 @@ body{
 }
 
 .btn{
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -202,7 +202,7 @@ body{
 }
 
 .advantages-title{
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -332,11 +332,11 @@ body{
   align-items: center;
 }
 
-.social-link:hover > svg > path{
+.social-link:hover path{
   fill: #68A2CA;
 }
 
-.social-link:active > svg > path{
+.social-link:active path{
   fill: #68A2CA4D;
 }
 
@@ -798,7 +798,7 @@ body{
   height: 15px;
 }
 .sort-select{
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   margin-left: auto;
   margin-right: 70px;
 }
@@ -1133,7 +1133,7 @@ body{
 }
 
 .form-modal-input-date{
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   display: flex;
   height: 48px;
   background-color: #F2F2F2;
@@ -1171,7 +1171,7 @@ body{
 }
 
 .form-modal-input-counter > input{
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   min-width: 31px;
   width: 31px;
   background-color: transparent;
@@ -1250,7 +1250,7 @@ body{
   border-radius: 10px;
   padding-top: 18px;
   padding-bottom: 18px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1356,7 +1356,7 @@ body{
 }
 
 .input-amount{
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1442,7 +1442,7 @@ body{
 }
 
 .control-text{
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
